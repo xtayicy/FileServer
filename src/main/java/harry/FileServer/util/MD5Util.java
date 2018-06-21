@@ -3,8 +3,6 @@ package harry.FileServer.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import org.junit.Test;
-
 /**
  * 
  * @author harry
@@ -22,9 +20,7 @@ public class MD5Util {
 			
 			return sb.toString();
 		} catch (NoSuchAlgorithmException e) {
-			e.printStackTrace();
+			throw new RuntimeException(e.getMessage());
 		}
-		
-		return null;
 	}
 }
