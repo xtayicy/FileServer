@@ -11,13 +11,6 @@ import org.junit.Test;
  *
  */
 public class MD5Util {
-	@Test
-	public void testEncode(){
-		String str = "zhangsan";
-		
-		System.out.println(MD5Util.encode(str.getBytes(), 0, str.length()));
-	}
-	
 	public static String encode(byte[] bytes,int start,int end){
 		try {
 			MessageDigest md5 = MessageDigest.getInstance("MD5");
